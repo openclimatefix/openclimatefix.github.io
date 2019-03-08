@@ -7,18 +7,9 @@
   <meta name="author" content="Jack Kelly">
   <style type="text/css">
     div {
-      /*width: 600px;
-      position: fixed;
-      left: 50%;
-      margin-left: -200px; */
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      min-height: 100vh;    
-      
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
       font-family: "Tahoma", "Geneva", "sans-serif";
     }
   </style>
@@ -27,22 +18,102 @@
 <body>
   <div>
     <h1>About Open Climate Fix</h1>
-    <p>Open Climate Fix is a new non-profit research and development lab, totally focused on reducing greenhouse gas emissions as rapidly as possible. &nbsp;Every part of the organisation is designed to maximise climate impact, such as our open and collaborative approach, our rapid prototyping, and our attention on finding scalable &amp; practical solutions. By using an open-source approach, we can draw upon a much larger pool of knowledge and skills than any individual company, so combining existing islands of knowledge and accelerating progress. Our approach will be to:</p>
+    <p>Open Climate Fix is a new non-profit research and development
+    lab, totally focused on reducing greenhouse gas emissions as
+    rapidly as possible. Every part of the organisation is
+    designed to maximise climate impact, such as our open and
+    collaborative approach, our rapid prototyping, and our attention
+    on finding scalable &amp; practical solutions. By using an
+    open-source approach, we can draw upon a much larger pool of
+    knowledge and skills than any individual company, so combining
+    existing islands of knowledge and accelerating progress. Our
+    approach will be to:</p>
     
     <ol>
-      <li>Search for machine learning problems where, if we solve a well-defined ML task, then there&#39;s likely to be a large climate impact. &nbsp;Then, for each of these challenges, we&#39;ll:</li>
-      <li>Collate &amp; release data, and write software tools to make it super-easy for people to consume this data.</li>
-      <li>Run a collaborative &#39;global research project&#39; where everyone from 16-year-olds to PhD students to corporate research labs can help solve the ML task (and, over the last 6 weeks, I&#39;ve received over 300 emails from people who&#39;d love to get involved).</li>
-      <li>Once the community has developed good solutions, help to put those into production, so we can be reducing emissions ASAP.</li>
+      <li>Search for machine learning problems where, if we solve a
+      well-defined ML task, then there&#39;s likely to be a large
+      climate impact. Then, for each of these challenges,
+        we&#39;ll:</li>
+      
+      <li>Collate &amp; release data, and write software tools to make
+        it super-easy for people to consume this data.</li>
+      
+      <li>Run a collaborative &#39;global research project&#39; where
+      everyone from 16-year-olds to PhD students to corporate research
+      labs can help solve the ML task (and, over the last 6 weeks,
+      I&#39;ve received over 300 emails from people who&#39;d love to
+        get involved).</li>
+      
+      <li>Once the community has developed good solutions, help to put
+      those into production, so we can be reducing emissions
+      ASAP.</li>
     </ol>
     
     <h1>Our first project: Solar PV nowcasting</h1>
-    <p>Solar PV is the largest source of uncertainty in electricity system operators&rsquo; forecasts. &nbsp;If a dark cloud moves across the sky, the grid can be taken by surprise and lose hundreds of megawatts of PV generation within minutes. &nbsp;This lost PV generation must be replaced immediately. &nbsp;But thermal generators take hours to spin-up from cold. The end result is that, whenever the sun is shining, the grid keeps lots of spinning-reserve online: mostly gas turbines, which are kept idling, but not generating electricity. &nbsp;This is expensive and carbon intensive. The grid would require less spinning reserve if they had better PV forecasts for the next few hours. That is, better PV forecasts would reduce carbon emissions, and save money. In the UK, better PV forecasts should save &pound;1-10 million per year (<a href="https://www.researchgate.net/profile/Jamie_Taylor7/project/PV-Live/attachment/58342d5c08ae5e4c8b365783/AS:431187387785227@1479814492614/download/JamieTaylor_PV_Live_v1_20161122.pdf">Taylor et al., 2016</a>), and about 100,000 tonnes of CO<sub>2</sub>&nbsp;per year. &nbsp;Scaled up globally, the carbon savings should be of the order of tens of millions of tonnes per year.</p>
     
-    <p>We plan to build better PV nowcasts by tracking clouds from satellite images, and &lsquo;rolling&rsquo; those images forwards in time using a combination of conventional numerical weather predictions, and machine learning. &nbsp;We&rsquo;ll use all available information about the winds at each cloud&rsquo;s altitude, and teach our machine learning model how clouds &lsquo;evolve&rsquo; over time. We are excited to apply an open-science approach to the nascent area of PV forecasting to achieve a step-change improvement in forecasting accuracy, and hence to help fix climate change.<p>
+    <p>Solar PV is the largest source of uncertainty in electricity
+    system operators&rsquo; forecasts. If a dark cloud moves
+    across the sky, the grid can be taken by surprise and lose
+    hundreds of megawatts of PV generation within minutes. This
+    lost PV generation must be replaced immediately. But thermal
+    generators take hours to spin-up from cold. The end result is
+    that, whenever the sun is shining, the grid keeps lots of
+    spinning-reserve online: mostly gas turbines, which are kept
+    idling, but not generating electricity. This is expensive
+    and carbon intensive. The grid would require less spinning reserve
+    if they had better PV forecasts for the next few hours. That is,
+    better PV forecasts would reduce carbon emissions, and save
+    money. In the UK, better PV forecasts should save &pound;1-10
+    million per year
+    (<a href="https://www.researchgate.net/profile/Jamie_Taylor7/project/PV-Live/attachment/58342d5c08ae5e4c8b365783/AS:431187387785227@1479814492614/download/JamieTaylor_PV_Live_v1_20161122.pdf">Taylor
+    et al, 2016</a>), and about 100,000 tonnes of
+    CO<sub>2</sub> per year. Scaled up globally, the carbon
+    savings should be of the order of tens of millions of tonnes per
+    year.</p>
+    
+    <p>We plan to build better PV nowcasts by tracking clouds from
+    satellite images, and &lsquo;rolling&rsquo; those images forwards
+    in time using a combination of conventional numerical weather
+    predictions, and machine learning. We&rsquo;ll use all
+    available information about the winds at each cloud&rsquo;s
+    altitude, and teach our machine learning model how clouds
+    &lsquo;evolve&rsquo; over time. We are excited to apply an
+    open-science approach to the nascent area of PV forecasting to
+    achieve a step-change improvement in forecasting accuracy, and
+    hence to help fix climate change.<p>
     
     <h1>Summary CV</h1>
-    <p>Jack Kelly is terrified by climate change and is determined to do everything in his power to reduce emissions, and so he has been applying machine learning to climate change mitigation for about ten years. Jack left Google DeepMind in December 2018 to build Open Climate Fix. &nbsp;At DeepMind, Jack worked as a research engineer working on <a href="https://deepmind.com/blog/machine-learning-can-boost-value-wind-energy/">using neural networks to predict wind power</a>. &nbsp;Prior to DeepMind, Jack did a PhD and postdoc at Imperial College London on electricity disaggregation. &nbsp;During his academic work, Jack collected and released the <a href="http://jack-kelly.com/data/">UK&rsquo;s largest dataset of domestic appliance-level electricity consumption</a>, he was the first to <a href="http://dx.doi.org/10.1145/2821650.2821672">apply deep learning to disaggregation</a>, and he was co-founder and one of three lead developers on the most popular <a href="http://nilmtk.github.io/">open-source framework for electricity disaggregation</a>.</p>
+    <p>Jack Kelly is terrified by climate change and is determined to
+    do everything in his power to reduce emissions, and so he has been
+    applying machine learning to climate change mitigation for about
+    ten years. Jack left Google DeepMind in December 2018 to build
+    Open Climate Fix. At DeepMind, Jack worked as a research
+    engineer working
+    on <a href="https://deepmind.com/blog/machine-learning-can-boost-value-wind-energy/">using
+    neural networks to predict wind power</a>. Prior to
+    DeepMind, Jack did a PhD and postdoc at Imperial College London on
+    electricity disaggregation. During his academic work, Jack
+    collected and released
+    the <a href="http://jack-kelly.com/data/">UK&rsquo;s largest
+    dataset of domestic appliance-level electricity consumption</a>,
+    he was the first
+    to <a href="http://dx.doi.org/10.1145/2821650.2821672">apply deep
+    learning to disaggregation</a>, and he was co-founder and one of
+    three lead developers on the most
+    popular <a href="http://nilmtk.github.io/">open-source framework
+        for electricity disaggregation</a>.</p>
+
+    <h1>More info</h1>
+
+    <ol>
+      <li>Check Jack
+      Kelly's <a href="https://twitter.com/jack_kelly">twitter
+      feed</a> and <a href="http://jack-kelly.com/">blog</a> for
+        updates.</li>
+
+      <li>Email <a href="mailto:jack@jack-kelly.com">jack@jack-kelly.com</a></li>
+    </ol>
+    
   </div>
 </body>
 </html>
