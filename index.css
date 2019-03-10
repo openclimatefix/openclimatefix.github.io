@@ -9,7 +9,12 @@ body {
 }
 
 .main-content h1 {
-    margin: 75px 0px 50px;
+    margin: 75px 3rem 50px;
+}
+
+.main-content p {
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 /* Desktop only */
