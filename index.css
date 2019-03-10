@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+}
+
+.main-content {
+    margin-top: 100px;
+    line-height: 30px;
+}
+
+.main-content h1 {
+    margin: 75px 0px 50px;
+}
+
+/* Desktop only */
+@media only screen and (min-width: 800px)
+{
+    .main-content {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.banner {
+    background-position: bottom;
+    background-image: url('solar-panels.jpg');
+    background-size: cover;
+    min-height: 300px;
+    text-align: center;
+}
+
+.banner h1 {
+    position: relative;
+    top: 100px;
+    color: white;
+    font-weight: 500;
+    margin: auto;
+}
