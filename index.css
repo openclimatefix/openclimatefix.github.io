@@ -29,16 +29,14 @@ body {
 
 .banner {
     background-position: bottom;
-    background-image: url('solar-panels.jpg');
+    /*background-image: url('solar-panels.jpg');*/
     background-size: cover;
-    min-height: 300px;
+    min-height: 150px;
     text-align: center;
 }
 
 .banner h1 {
     position: relative;
     top: 100px;
-    color: white;
-    font-weight: 500;
     margin: auto;
 }
