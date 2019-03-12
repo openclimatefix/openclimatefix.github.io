@@ -12,7 +12,7 @@ body {
     margin: 75px 3rem 50px;
 }
 
-.main-content p {
+.main-content p,li {
     margin-left: 3rem;
     margin-right: 3rem;
 }
