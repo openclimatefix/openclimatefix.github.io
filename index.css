@@ -1,42 +1,52 @@
 body {
     font-family: sans-serif;
-    margin: 0px;
-}
-
-.main-content {
-    margin-top: 100px;
-    line-height: 30px;
-}
-
-.main-content h1,h2,h3,h4,h5,h6 {
-    margin: 30px 3rem 0px;
-}
-
-.main-content p,li {
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-
-/* Desktop only */
-@media only screen and (min-width: 800px)
-{
-    .main-content {
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    margin: 0;
 }
 
 .banner {
+    min-height: 10rem;
+    padding: 0 2rem;
     background-position: bottom;
     /*background-image: url('solar-panels.jpg');*/
     background-size: cover;
-    min-height: 150px;
-    text-align: center;
 }
 
-.banner h1 {
-    position: relative;
-    top: 100px;
+.main-content {
+    max-width: 36rem;
     margin: auto;
+    line-height: 1.5;
+    padding: 0 2rem 6rem;
+}
+
+h1 {
+    position: relative;
+    top: 7rem;
+    margin: auto;
+    max-width: 36rem;
+}
+
+h2 {
+	margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h3, h4, h5, h6 {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+h2 + h3 {
+	margin-top: 1rem;
+}
+
+h3 + p {
+	margin-top: 0.5;
+}
+
+ol {
+	padding-left: 1em;
+}
+
+p {
+	margin-top: 0.5em;
 }
