@@ -50,3 +50,37 @@ ol {
 p {
 	margin-top: 0.5em;
 }
+
+.flex-buttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-buttons > .flex-child {
+    -webkit-box-flex: 0 0 40%;
+    -moz-box-flex:  0 0 40%;
+    -webkit-flex:  0 0 40%;
+    -ms-flex:  0 0 40%;
+    flex: 0 0 40%;
+}
+
+.get-involved > .button {
+    padding: 15px 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.blue {
+    background-color: #008CBA;
+    color: white;
+}
+
+.gray {
+    background-color: #e7e7e7;
+    color: black;
+}
