@@ -4,10 +4,13 @@ import solar2 from "./assets/solar2.jpg";
 import foundation from "./assets/foundation.png";
 
 export default class Photo extends React.Component {
-  state = {
-    height: window.innerHeight,
-    page: 0
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      height: window.innerHeight,
+      page: 0
+    };
+  }
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);

@@ -1,7 +1,7 @@
 // http://mrl.nyu.edu/~perlin/noise/
 
 export default function ImprovedNoise() {
-  var p = [
+  const p = [
     151,
     160,
     137,
@@ -260,7 +260,7 @@ export default function ImprovedNoise() {
     180
   ];
 
-  for (var i = 0; i < 256; i++) {
+  for (let i = 0; i < 256; i+=1) {
     p[256 + i] = p[i];
   }
 

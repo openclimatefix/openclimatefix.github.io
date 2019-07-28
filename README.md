@@ -1,68 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Open Climate Fix Website
+This is highly WIP atm.
+If you want to see what's going on, run `npm run develop`.
+## Getting Started
 
-## Available Scripts
+Install this starter (assuming [Gatsby](https://github.com/gatsbyjs/gatsby/) is installed and updated) by running from your CLI:
 
-In the project directory, you can run:
+```sh
+gatsby new YourProjectName https://github.com/Vagr9K/gatsby-advanced-starter
+npm run develop # or gatsby develop
+```
 
-### `npm start`
+Or you can fork the project, make your changes there and merge new features when needed.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Alternatively:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```sh
+git clone https://github.com/Vagr9K/gatsby-advanced-starter YourProjectName # Clone the project
+cd YourProjectname
+rm -rf .git # So you can have your own changes stored in VCS.
+npm install # or yarn install
+npm run develop # or gatsby develop
+```
 
-### `npm test`
+## Configuration
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Edit the export object in `data/SiteConfig`:
 
-### `npm run build`
+```js
+module.exports = {
+  siteTitle: "Gatsby Advanced Starter", // Site title.
+  siteTitleShort: "GA Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "GatsbyJS Advanced Starter", // Alternative site title for SEO.
+  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+  siteUrl: "https://vagr9k.github.io", // Domain of your website without pathPrefix.
+  pathPrefix: "/gatsby-advanced-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+  siteDescription: "A GatsbyJS stater with Advanced design in mind.", // Website description used for RSS feeds/meta description tag.
+  siteRss: "/rss.xml", // Path to the RSS file.
+  googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
+  disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // Disqus shortname.
+  postDefaultCategoryID: "Tech", // Default category for posts.
+  dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
+  dateFormat: "DD/MM/YYYY", // Date format for display.
+  userName: "Advanced User", // Username to display in the author segment.
+  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
+  userLocation: "North Pole, Earth", // User location to display in the author segment.
+  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
+  userDescription:
+    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
+  // Links to social profiles/projects you want to display in the author segment/navigation bar.
+  userLinks: [
+    {
+      label: "GitHub",
+      url: "https://github.com/Vagr9K/gatsby-advanced-starter",
+      iconClassName: "fa fa-github"
+    },
+    {
+      label: "Twitter",
+      url: "https://twitter.com/Vagr9K",
+      iconClassName: "fa fa-twitter"
+    },
+    {
+      label: "Email",
+      url: "mailto:vagr9k@gmail.com",
+      iconClassName: "fa fa-envelope"
+    }
+  ],
+  copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
+  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
+  backgroundColor: "#e0e0e0" // Used for setting manifest background color.
+};
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can also optionally set `pathPrefix`:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```js
+module.exports = {
+  // Note: it must *not* have a trailing slash.
+  pathPrefix: "/gatsby-advanced-starter" // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+};
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!

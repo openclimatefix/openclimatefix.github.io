@@ -8,6 +8,8 @@ import Footer from "./Footer";
 import Tabs from "./Tabs";
 import ImprovedNoise from "./ImprovedNoise";
 
+import "./App.css";
+
 export default class App extends React.Component {
   componentDidMount() {
     var mouseX = 0;
