@@ -8,6 +8,8 @@ import Footer from "./Footer";
 import Tabs from "./Tabs";
 import ImprovedNoise from "./ImprovedNoise";
 
+import BlogPosts from './BlogPosts';
+
 import "./App.css";
 
 export default class App extends React.Component {
@@ -158,6 +160,10 @@ export default class App extends React.Component {
   }
 
   render() {
+    // TODO(FWirtz): Deal with this monstrosity:
+    // https://github.com/gatsbyjs/gatsby/issues/5102#issuecomment-450851360
+    const { blogPosts } = this.props;
+
     return (
       <div>
         {/* Render target for Three.js */}
@@ -246,6 +252,7 @@ export default class App extends React.Component {
               <div class="button">Join the Cause</div>
             </a>
           </div>
+          <BlogPosts blogPosts={blogPosts} />
           <Footer />
         </div>
       </div>
