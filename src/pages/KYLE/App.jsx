@@ -13,7 +13,7 @@ import BlogPosts from "./BlogPosts";
 import "./App.css";
 
 export default class App extends React.Component {
-  TESTcomponentDidMount() {
+  componentDidMount() {
     var mouseX = 0;
     var container;
     var camera, scene, renderer, data, geometry;
