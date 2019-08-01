@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import PostListing from "../../components/PostListing/PostListing";
-
 
 export default class BlogPosts extends Component {
   render() {
@@ -21,11 +20,6 @@ export default class BlogPosts extends Component {
         }
     */
 
-    return (
-      <React.Fragment>
-        <h2>Blog posts</h2>
-        <PostListing postEdges={blogPosts} />
-      </React.Fragment>
-    )
+    return <PostListing postEdges={blogPosts} />;
   }
 }

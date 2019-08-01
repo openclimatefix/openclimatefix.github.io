@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import PostTags from "../PostTags/PostTags";
+
 class PostListing extends React.Component {
   getPostList() {
     const postList = [];
@@ -20,12 +22,16 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <div>
+      <div className="post-listing">
         {/* Your post list here. */
         postList.map(post => (
-          <Link to={post.path} key={post.title}>
-            <h1>{post.title}</h1>
-          </Link>
+          <div className="card">
+            <Link to={post.path} key={post.title}>
+              <h2>{post.title}</h2>
+            </Link>
+            {post.excerpt}
+            <PostTags tags={post.tags} />
+          </div>
         ))}
       </div>
     );
