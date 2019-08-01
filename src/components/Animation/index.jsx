@@ -4,7 +4,7 @@ import * as THREE from "three";
 import ImprovedNoise from "../../pages/KYLE/ImprovedNoise";
 
 export default class Animation extends React.Component {
-  componentDidMount() {
+  dcomponentDidMount() {
     var mouseX = 0;
     var container;
     var camera, scene, renderer, data, geometry;
@@ -160,7 +160,7 @@ export default class Animation extends React.Component {
     return (
       <div>
         {/* Render target for Three.js */}
-        <div id="animation-container">HELLO WORLD</div>
+        <div id="animation-container" />
         {/* Gradient overlay. */}
         <div class="cover" />
       </div>

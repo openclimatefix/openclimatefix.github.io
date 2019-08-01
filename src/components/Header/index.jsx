@@ -7,7 +7,7 @@ export default function Header() {
         <div className="menu__inner">
           <div className="menu__logo">
             <div className="logo">
-              <a href="#">Open Climate Fix</a>
+              <a href="/">Open Climate Fix</a>
             </div>
           </div>
           <div className="menu__items">

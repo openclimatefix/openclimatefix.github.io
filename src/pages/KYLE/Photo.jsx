@@ -14,7 +14,7 @@ export default class Photo extends React.Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    this._offsetTop = document.getElementById("container").offsetTop;
+    this._offsetTop = document.getElementById("photos-container").offsetTop;
   }
 
   componentWillMount() {
@@ -24,15 +24,7 @@ export default class Photo extends React.Component {
   getScrollPercent() {}
 
   handleScroll = () => {
-    const page = window.pageYOffset;
-    const offsetTop = this._offsetTop;
-
-    const scrollPercent = (page - offsetTop) / this.state.height;
-    // console.log(page);
-
-    this.setState({
-      page
-    });
+    this.setState({ page: window.pageYOffset });
   };
 
   render() {
@@ -54,7 +46,7 @@ export default class Photo extends React.Component {
           style={{
             opacity: page < offset ? 0 : fade,
             filter: `blur(${blur}px)`,
-            top: height / 2 - (page - offset) / 3 - 100
+            top: height / 4 - (page - offset) / 3
           }}
         >
           <img
@@ -70,6 +62,6 @@ export default class Photo extends React.Component {
       );
     });
 
-    return <div id="container">{photos}</div>;
+    return <div id="photos-container">{photos}</div>;
   }
 }

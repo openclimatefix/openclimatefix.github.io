@@ -13,7 +13,7 @@ import BlogPosts from "./BlogPosts";
 import "./App.css";
 
 export default class App extends React.Component {
-  componentDidMount() {
+  TESTcomponentDidMount() {
     var mouseX = 0;
     var container;
     var camera, scene, renderer, data, geometry;
@@ -177,7 +177,7 @@ export default class App extends React.Component {
             <Photo />
             <div class="h1">
               We maximize impact through rapid prototyping, scalable solutions
-              and open collaboration.
+              and open collaboration
             </div>
             <div class="paragraph">
               Open Climate Fix is a non-profit research and development lab,
@@ -193,7 +193,7 @@ export default class App extends React.Component {
               Our process is to:
             </div>
             <Tabs />
-            <div class="h1">A short term plan for the long term future.</div>
+            <div class="h1">A short term plan for the long term future</div>
             <div class="paragraph">
               The dream for the first few years is to build the world’s best
               solar PV nowcasting tool, in collaboration with the research
@@ -217,7 +217,7 @@ export default class App extends React.Component {
               all the distractions, then we might just pull this off in time.
               Let's get started.
             </div>
-            <div class="h1">Meet the founding team.</div>
+            <div class="h1">Meet the founding team</div>
             <div class="paragraph">
               <b>Jack Kelly</b> is terrified by climate change and is determined
               to do everything in his power to reduce emissions. For the last
@@ -246,13 +246,14 @@ export default class App extends React.Component {
               supporting communities that would otherwise not have a chance to
               participate in advancing AI.
             </div>
+            <div class="h1">Recent updates</div>
+            <BlogPosts blogPosts={blogPosts} />
           </div>
           <div class="button__container">
             <a href="https://airtable.com/shrl59GJ96csVF4WB">
               <div class="button">Join the Cause</div>
             </a>
           </div>
-          <BlogPosts blogPosts={blogPosts} />
           <Footer />
         </div>
       </div>
