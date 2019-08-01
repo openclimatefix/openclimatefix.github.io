@@ -9,3 +9,264 @@ html {
 body {
   margin: 0;
 }
+
+.blog-post {
+  max-width: 520px;
+  margin: auto;
+  overflow-wrap: break-word;
+}
+
+.blog-post li {
+  margin-bottom: 1rem;
+}
+
+.blog-post__container {
+  width: 100%;
+  position: absolute;
+  top: 300px;
+  padding-top: 30px;
+}
+
+.blog-post__header {
+  height: 300px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.blog-post__title {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+#animation-container {
+  z-index: 0;
+  position: relative;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
+
+body {
+  background-color: rgb(22, 24, 42);
+  margin: 0;
+  overflow-x: hidden;
+  color: #e7e7e8;
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.cover {
+  background: linear-gradient(
+    rgba(6, 1, 19, 0.7),
+    rgba(13, 14, 15, 0.5),
+    rgba(6, 1, 19, 0.4)
+  );
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+.wrap {
+  position: relative;
+  top: 0;
+  width: 100vw;
+}
+
+.logo {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.menu {
+  padding-left: 32px;
+  padding-right: 32px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu__inner {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+.menu__items {
+  display: inline-flex;
+}
+
+.menu__item {
+  margin-left: 24px;
+}
+.link {
+  cursor: pointer;
+  transition: color cubic-bezier(0.645, 0.045, 0.355, 1) 0.15s;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.link:hover {
+  color: #b9b8bb;
+}
+.wrap2 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 30vh;
+}
+.wrap3 {
+  width: 100vw;
+  height: 100vh;
+  top: 200vh;
+  position: absolute;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer-item {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.footer-item:hover {
+  color: #b9b8bb;
+}
+#container {
+  position: fixed;
+}
+.twitter {
+  cursor: pointer;
+  transition: opacity cubic-bezier(0.645, 0.045, 0.355, 1) 0.15s;
+  position: relative;
+  top: 10px;
+}
+.twitter:hover {
+  opacity: 0.65;
+}
+.button {
+  border: 2px solid white;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 12px 16px;
+  line-height: 1em;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.button:hover {
+  background: #e7e7e8;
+  color: #060113;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 2.8rem;
+}
+.content {
+  max-width: 700px;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 40vw;
+}
+.paragraph {
+  margin-bottom: 1.4rem;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+.tab {
+  padding: 8px 16px;
+  margin-right: 16px;
+  color: #aaa;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #aaa;
+  border-color: #aaa;
+}
+.tab:hover {
+  color: #ddd;
+  border-color: #ddd;
+}
+.tab_active {
+  color: #e7e7e8 !important;
+  border-color: #e7e7e8 !important;
+}
+.tab_number {
+  border: 1px solid;
+  border-color: inherit;
+  border-radius: 10000px;
+  padding: 4px 7px;
+  margin-right: 1rem;
+  font-size: 0.4rem;
+  display: none;
+}
+.tabs {
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 600px;
+  display: inline-flex;
+  margin-top: 1em;
+}
+.tab_inner {
+  max-width: 600px;
+  padding: 16px;
+  font-size: 18px;
+}
+.title {
+  text-align: center;
+  font-size: calc(30px + 3vw);
+  font-weight: bold;
+  line-height: 1.6em;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.subtitle {
+  font-size: calc(10px + 1vw);
+  line-height: 1.2em;
+  max-width: 30vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title-hidden {
+  opacity: 0;
+}
+#title-0,
+#title-1,
+#title-2 {
+  position: absolute;
+  width: 50%;
+}
+.button__container {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.photo_container {
+  position: fixed;
+  width: 50vw;
+  right: 0;
+  text-align: center;
+}
+
+.photo {
+  width: 60%;
+  border-radius: 4px;
+}

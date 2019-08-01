@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import Tabs from "./Tabs";
 import ImprovedNoise from "./ImprovedNoise";
 
-import BlogPosts from './BlogPosts';
+import BlogPosts from "./BlogPosts";
 
 import "./App.css";
 

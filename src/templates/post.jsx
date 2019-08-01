@@ -2,6 +2,8 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
+import Header from "../components/Header";
+import Animation from "../components/Animation";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
@@ -25,20 +27,26 @@ export default class PostTemplate extends React.Component {
     }
     return (
       <Layout>
-        <div>
+        <div className="blog-post__header">
+          <Animation />
+        </div>
+        <div className="wrap">
+          <Header />
+          <h1 className="blog-post__title">{post.title}</h1>
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <div>
-            <h1>{post.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-            <div className="post-meta">
-              <PostTags tags={post.tags} />
-              <SocialLinks postPath={slug} postNode={postNode} />
+          <div className="blog-post__container">
+            <div className="blog-post">
+              <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+              <div className="post-meta">
+                <PostTags tags={post.tags} />
+                <SocialLinks postPath={slug} postNode={postNode} />
+              </div>
+              <UserInfo config={config} />
+              <Disqus postNode={postNode} />
             </div>
-            <UserInfo config={config} />
-            <Disqus postNode={postNode} />
           </div>
         </div>
       </Layout>
