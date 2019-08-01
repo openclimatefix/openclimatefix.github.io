@@ -4,7 +4,7 @@ import * as THREE from "three";
 import ImprovedNoise from "../../pages/KYLE/ImprovedNoise";
 
 export default class Animation extends React.Component {
-  dcomponentDidMount() {
+  componentDidMount() {
     var mouseX = 0;
     var container;
     var camera, scene, renderer, data, geometry;
