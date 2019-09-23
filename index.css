@@ -4,7 +4,7 @@ body {
 }
 
 .banner {
-    min-height: 10rem;
+    min-height: 11rem;
     padding: 0 2rem;
     background-position: bottom;
     /*background-image: url('solar-panels.jpg');*/
@@ -15,7 +15,12 @@ body {
     max-width: 36rem;
     margin: auto;
     line-height: 1.5;
-    padding: 0 2rem 6rem;
+    /*padding: 0 2rem 6rem;*/
+
+
+}
+blockquote {
+    padding: 0 32px;
 }
 
 h1 {
@@ -26,7 +31,7 @@ h1 {
 }
 
 h2 {
-	margin-top: 2em;
+    margin-top: 2em;
     margin-bottom: 1em;
 }
 
@@ -36,19 +41,19 @@ h3, h4, h5, h6 {
 }
 
 h2 + h3 {
-	margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 h3 + p {
-	margin-top: 0.5;
+    margin-top: 0.5;
 }
 
 ol {
-	padding-left: 1em;
+    padding-left: 1em;
 }
 
 p {
-	margin-top: 0.5em;
+    margin-top: 0.5em;
 }
 
 .flex-buttons {
