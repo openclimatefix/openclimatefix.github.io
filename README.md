@@ -1,5 +1,5 @@
 # Open Climate Fix Website
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-) ![Open Collective backers and sponsors](https://img.shields.io/opencollective/all/openclimatefix?style=flat-square)
 
 Source for openclimatefix.org.
 This is currently under heavy construction.
