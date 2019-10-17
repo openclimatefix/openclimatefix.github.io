@@ -14,11 +14,57 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "ollicle",
+      "name": "Oliver Boermans",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/63586?v=4",
+      "profile": "http://www.ollicle.com",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "eambutu",
+      "name": "eambutu",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/11009767?v=4",
+      "profile": "https://www.phillipkwang.com",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    },
+    {
+      "login": "JackKelly",
+      "name": "Jack Kelly",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/460756?v=4",
+      "profile": "http://jack-kelly.com",
+      "contributions": [
+        "business",
+        "code",
+        "content",
+        "ideas"
+      ]
+    },
+    {
+      "login": "FWirtz",
+      "name": "Flo",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6052785?v=4",
+      "profile": "https://github.com/FWirtz",
+      "contributions": [
+        "code",
+        "content",
+        "ideas",
+        "maintenance",
+        "design",
+        "projectManagement"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "openclimatefix.github.io",
   "projectOwner": "openclimatefix",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "commitConvention": "none"
 }
