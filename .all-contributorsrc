@@ -30,7 +30,8 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/11009767?v=4",
       "profile": "https://www.phillipkwang.com",
       "contributions": [
-        "bug"
+        "bug",
+        "code"
       ]
     },
     {
@@ -39,7 +40,10 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/460756?v=4",
       "profile": "http://jack-kelly.com",
       "contributions": [
-        "business"
+        "business",
+        "code",
+        "content",
+        "ideas"
       ]
     },
     {
@@ -48,7 +52,12 @@
       "avatar_url": "https://avatars1.githubusercontent.com/u/6052785?v=4",
       "profile": "https://github.com/FWirtz",
       "contributions": [
-        "code"
+        "code",
+        "content",
+        "ideas",
+        "maintenance",
+        "design",
+        "projectManagement"
       ]
     }
   ],
