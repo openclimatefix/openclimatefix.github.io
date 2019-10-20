@@ -1,0 +1,12 @@
+.background {
+  @apply absolute;
+
+  width:10000px;
+  background: transparent url("https://raw.githubusercontent.com/openclimatefix/openclimatefix.github.io/master/src/images/clouds_repeat.png") repeat;
+  background-size: 1000px 1000px;
+
+  filter: invert(100%);
+  opacity: 0.9;
+
+  left: 0;
+}
