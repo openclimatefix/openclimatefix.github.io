@@ -62,48 +62,6 @@
 <p>But, today, these four steps require an incredible amount of tedious 'manual' work and so often take <em>months</em> to complete (and sometimes it's simply impossible to complete these steps). This friction costs money and time, inhibits innovation, and slows the rate at which we can reduce carbon emissions to net-zero.</p>
 <p>In this document, we’ll look at a single technical framework that could help solve all these problems: linked data.</p>
 <p><img src="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/blog/2020-08-18_image_0.png" alt="Linked Data Overview"></p>
-<h2 id="overview-of-the-web-of-energy-data" style="position:relative;"><a href="#overview-of-the-web-of-energy-data" aria-label="overview of the web of energy data permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview of the web of energy data</h2>
-<ul>
-<li>Data &#x26; metadata files will reside on data custodians' web servers.</li>
-<li>
-<p>A search engine will provide an entry point into the 'web of energy data'.</p>
-<ul>
-<li>The search engine will construct a 'knowledge graph' of the web of energy data by crawling the metadata files.</li>
-<li>This is far more than 'just' a list of assets and datasets! It will understand the <em>relationships</em> and the <em>meaning</em> of the data, hence enabling:</li>
-<li>highly specific searches</li>
-<li>discovery of data &#x26; assets by walking the knowledge graph</li>
-</ul>
-</li>
-<li>A Directory (adapted from Open Banking) will associate parties with security credentials. This will limit access to <em>shared</em> data: data which is available only to specific groups of people, for specific purposes. For example, access controls might be necessary for personally identifiable information; or commercially sensitive information; or information that could be used to disrupt the energy system.</li>
-<li>Every <em>thing</em> (substation, dataset, energy company, etc.) will have a unique ID.</li>
-<li>This ID will take the form of a web address (URL).</li>
-<li>Accessing that web address will return metadata describing the <em>thing</em>.</li>
-<li>The metadata will be in a standard format and use a standard vocabulary; and will <em>link</em> to related resources (just as web pages link to other web pages).</li>
-<li>Taken together, these linked metadata files will form a distributed graph ('network') representing the energy system itself and energy datasets; and their relationships.</li>
-<li>Metadata will be compatible with search engines, so users can also enter the "web of energy data" through conventional search engines.</li>
-<li>Open data (as distinct from <em>meta</em>data) can be published in any machine-readable format. But there may be recommended formats for new datasets.</li>
-<li>A standard API will be defined to allow data providers to restrict access to <em>shared</em> data (data that is sensitive or requires payment).</li>
-</ul>
-<h2 id="benefits" style="position:relative;"><a href="#benefits" aria-label="benefits permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Benefits</h2>
-<p>Just like the world wide web, content on the 'web of energy data' will be:</p>
-<ul>
-<li><strong>No "big-bang" IT projects</strong>: Allow industry to adapt piece-by-piece.</li>
-<li><strong>Distributed</strong>: Organisations host data on their own servers so will retain full control. No single point of failure. Scales rapidly.</li>
-<li><strong>Easy to interpret</strong>: Metadata will use a common technical language.</li>
-<li><strong>Easy to create</strong>: The metadata standard will be as simple as possible, and as similar as possible to existing vocabularies.</li>
-<li><strong>Uniquely identifiable</strong>: Hence trivial to combine. Unique identifiers for energy assets &#x26; datasets is the first step towards combining existing energy asset registers.</li>
-<li><strong>Linked</strong> to related assets.</li>
-<li><strong>Searchable</strong> &#x26; <strong>Discoverable</strong> through the Knowledge Graph.</li>
-<li><strong>Secured</strong> using a Directory adapted from Open Banking.</li>
-</ul>
-<h2 id="what-does-success-look-like" style="position:relative;"><a href="#what-does-success-look-like" aria-label="what does success look like permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What does success look like?</h2>
-<ul>
-<li>Substantially reduced costs and time to publish and consume energy data.</li>
-<li>Spawn a vibrant ecosystem of innovative energy information services.</li>
-<li>Data and assets will be easy to find as searching the web for a local restaurant.</li>
-<li>Enable an energy system capable of orchestrating millions of DERs.</li>
-<li>Hence help reduce carbon emissions to net-zero without breaking the bank! (The bit that Open Climate Fix is most passionate about!)</li>
-</ul>
 <h2 id="principles" style="position:relative;"><a href="#principles" aria-label="principles permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Principles</h2>
 <ul>
 <li><em>Enable</em> the rest of the ecosystem: Don't <em>compete</em>.</li>
@@ -209,6 +167,50 @@
 <p>Inner layers would provide services to the layer immediately above. For example, services which optimise a building's energy assets to maximise self consumption would be entirely responsible for managing assets within each building. This layer would provide services to the next layer: local balancing and cooperation. These two layers would communicate in both directions. But, crucially, the local balancing layer wouldn't try to micromanage individual assets. Instead, it would (politely) ask the building's energy management system to ramp up / ramp down.</p>
 <p>The key to managing complexity is to ensure that outer layers don't micromanage inner layers: An outer layer can't directly control an inner layer's assets. Instead, outer layers must go through the inner layer's interface.</p>
 <p>This way of thinking about the energy system also helps inform our priorities for defining standards for data sharing: The priority is to define data standards for the communication <em>between</em> layers. The communication <em>within</em> layers is an 'implementation detail' that outer layers don't need to worry about. (Also see this Vox article: <a href="https://www.vox.com/energy-and-environment/2018/11/30/17868620/renewable-energy-power-grid-architecture">Renewable energy threatens to overwhelm the grid. Here's how it can adapt.</a>)</p>
+<h2 id="overview-of-the-web-of-energy-data" style="position:relative;"><a href="#overview-of-the-web-of-energy-data" aria-label="overview of the web of energy data permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview of the web of energy data</h2>
+<ul>
+<li>Data &#x26; metadata files will reside on data custodians' web servers.</li>
+<li>
+<p>A search engine will provide an entry point into the 'web of energy data'.</p>
+<ul>
+<li>The search engine will construct a 'knowledge graph' of the web of energy data by crawling the metadata files.</li>
+<li>This is far more than 'just' a list of assets and datasets! It will understand the <em>relationships</em> and the <em>meaning</em> of the data, hence enabling:</li>
+<li>highly specific searches</li>
+<li>discovery of data &#x26; assets by walking the knowledge graph</li>
+</ul>
+</li>
+<li>A Directory (adapted from Open Banking) will associate parties with security credentials. This will limit access to <em>shared</em> data: data which is available only to specific groups of people, for specific purposes. For example, access controls might be necessary for personally identifiable information; or commercially sensitive information; or information that could be used to disrupt the energy system.</li>
+<li>Every <em>thing</em> (substation, dataset, energy company, etc.) will have a unique ID.</li>
+<li>This ID will take the form of a web address (URL).</li>
+<li>Accessing that web address will return metadata describing the <em>thing</em>.</li>
+<li>The metadata will be in a standard format and use a standard vocabulary; and will <em>link</em> to related resources (just as web pages link to other web pages).</li>
+<li>Taken together, these linked metadata files will form a distributed graph ('network') representing the energy system itself and energy datasets; and their relationships.</li>
+<li>Metadata will be compatible with search engines, so users can also enter the "web of energy data" through conventional search engines.</li>
+<li>Open data (as distinct from <em>meta</em>data) can be published in any machine-readable format. But there may be recommended formats for new datasets.</li>
+<li>A standard API will be defined to allow data providers to restrict access to <em>shared</em> data (data that is sensitive or requires payment).</li>
+</ul>
+<h2 id="benefits" style="position:relative;"><a href="#benefits" aria-label="benefits permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Benefits</h2>
+<ul>
+<li><strong>No "big-bang" IT projects</strong>: Allow industry to adapt piece-by-piece.</li>
+</ul>
+<p>Just like the world wide web, content on the 'web of energy data' will be:</p>
+<ul>
+<li><strong>Distributed</strong>: Organisations host data on their own servers so will retain full control. No single point of failure. Scales rapidly.</li>
+<li><strong>Easy to interpret</strong>: Metadata will use a common technical language.</li>
+<li><strong>Easy to create</strong>: The metadata standard will be as simple as possible, and as similar as possible to existing vocabularies.</li>
+<li><strong>Uniquely identifiable</strong>: Hence trivial to combine. Unique identifiers for energy assets &#x26; datasets is the first step towards combining existing energy asset registers.</li>
+<li><strong>Linked</strong> to related assets.</li>
+<li><strong>Searchable</strong> &#x26; <strong>Discoverable</strong> through the Knowledge Graph.</li>
+<li><strong>Secured</strong> using a Directory adapted from Open Banking.</li>
+</ul>
+<h2 id="what-does-success-look-like" style="position:relative;"><a href="#what-does-success-look-like" aria-label="what does success look like permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What does success look like?</h2>
+<ul>
+<li>Substantially reduced costs and time to publish and consume energy data.</li>
+<li>Spawn a vibrant ecosystem of innovative energy information services.</li>
+<li>Data and assets will be as easy to find as searching the web for a local restaurant.</li>
+<li>Enable an energy system capable of orchestrating millions of distributed energy resources (DERs).</li>
+<li>Hence help reduce carbon emissions to net-zero without breaking the bank! (The bit that Open Climate Fix is most passionate about!)</li>
+</ul>
 <h1 id="how-does-this-fit-in-with-the-billion-existing-energy-data-projects" style="position:relative;"><a href="#how-does-this-fit-in-with-the-billion-existing-energy-data-projects" aria-label="how does this fit in with the billion existing energy data projects permalink" class="anchor before"><svg aria-hidden="true" height="20" version="1.1" viewBox="0 0 16 16" width="20"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How does this fit in with the billion existing energy data projects?</h1>
 <p>Ha! Good question. And, there really are a <em>lot</em> of existing energy data projects (which is very exciting… but also just a little, um, overwhelming!)</p>
 <p>Broadly, the approach isn’t to <em>compete</em> with existing projects. Rather the aim is to <em>enable</em> future &#x26; ongoing projects; and to learn from recently completed projects; and to collaborate intimately with the community.</p>
